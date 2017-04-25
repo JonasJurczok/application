@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[ngerman]{babel}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{4cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\include{info}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Personal Details}
+
+\cvitem{Geburtstag}{22. August 1985}
+\cvitem{Staatsangehörigkeit}{Deutsch}
+\cvitem{Geburtsort}{Berlin}
+
+\cvitem{Mutter}{Maria Regina Radtke-Jurczok}
+\cvitem{Vater}{Clemens Jurczok}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{09/2016 -- today}{Tech Lead (Teamlead)}{}{\textsc{Notebooksbilliger.de AG}}{Berlin}{\begin{itemize}
+\item Führungsverantwortung für vier Entwickler.
+\item Rückbau einer alten ESB implementation
+\item Entwicklung interner Infrastruktur (siehe Projekte weiter unten)
+\item Entwicklung interner Projekte (siehe Projekte weiter unten)
+\item Einführung, Förderung und Schulung neuer Ideen zu den Themen Architektur, Arbeitskultur, Kommunikation und Agiler Prinzipien.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{07/2016 -- 09/2016}{Senior Software Entwickler}{}{\textsc{Notebooksbilliger.de AG}}{Berlin}{\begin{itemize}
+\item Einführung agiler Methoden in ein bestehendes Team
+\item Einfürhung und Entwicklung von Entwicklungsstandards und best practices
+\item Einführung einer Kultur der Kommunikation und Kollaboration
+\item Rückbau einer alten ESB Implementation
+\item Einführung moderner Frameworks zur Vereinfachung der benutzen Applikationsmuster
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{04/2015 -- 07/2016}{Onboarding Manager}{}{\textsc{Zalando SE}}{Berlin}{\begin{itemize}
+\item Schulung und training aller Neueinstellungen bei Zalando Technology (30-70 Personen / Monat)
+\item Entwicklung und Ausführung eines Konzeptes zur Integration aller Neueinstellungen in die bestehende Zalando Tech Kultur
+\item Erstellung eines Konzeptes zur Automatisierung des onboarding Prozesses
+\item Aufbau des Onboarding Teams welches diesen Prozess betreuen und ausführen kann
+\item Durchführung von über 100 Jobinterviews für neue Software Entwickler
+\end{itemize}}s
+
+%------------------------------------------------
+
+\cventry{06/2013 -- 03/2015}{Interim Techlead}{Führung eines Teilteams}{\textsc{Zalando SE}}{Berlin}{\begin{itemize}
+\item Aufbau und Entwicklung eines Software Entwicklungsteams
+\item Betreuung und Entwicklung der Teamkultur in besagtem Team
+\item Erstellung und Betreuung von Konzepten für mehrere Software Projekte im Kontext des Teams
+\item Stakeholder Management
+\item Schulung der Mitarbeiter in agilen Methoden (Scrum und Kanban)
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{01/2013 -- 05/2013}{Software Entwickler}{}{\textsc{Zalando SE}}{Berlin}{\begin{itemize}
+\item Konzeptionierung und Implementation verschiedener Projekte
+\item Qualitätssicherung
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{05/2011 -- 12/2012}{Software Entwickler}{Werkstudent}{\textsc{CosmoCode GmbH}}{Berlin}{\begin{itemize}
+\item Konzeptionierung und Implementation verschiedener Kundenprojekte in Java und PHP
+\item Qualitätssicherung
+\item Kundenkommunikation
+\item Agile Methoden (Scrum und Kanban)
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{07/2009 -- 04/2011}{Webentwickler}{Werkstudent}{\textsc{Plista GmbH}}{Berlin}{\begin{itemize}
+\item Webentwicklung mit PHP
+\item Entwicklung neuer Features für interne tools
+\item Qualitätssicherung
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{12/2006 -- 07/2009}{Software Entwickler}{Ausbildung}{\textsc{HUP AG}}{Berlin}{\begin{itemize}
+\item Entwicklung in den Firmenprodukten mit Delphi und PL/SQL
+\item Konzeptionierung neuer Features
+\item Kundenkommunikation
+\item Qualitätssicherung
+\end{itemize}}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{10/2009 -- 12/2012}{Bachelor of Science}{Informatik}{FFreie Universität}{Berlin}{\textit{nicht abgeschlossen}}
+\cventry{08/1998 -- 07/2006}{Abitur}{Katholische Schule Liebfrauen}{}{}{}
+\cventry{08/1997 -- 08/1998}{Grundschule}{Katholische Schule Herz-Jesu}{}{}{}
+\cventry{08/1992 -- 07/1997}{Grundschule}{Clara Grunwald Grundschule}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\vspace{5pt}
+
+\subsection{Deployment Infrastruktur}
+\cvitem{Typ}{Firmenproject}
+\cvitem{Zeitraum}{03/2017 -- Today}
+\cvitem{Team}{Björn Clemens}
+\cvitem{Technologien}{\textsc{Docker}, \textsc{Kubernetes}}
+\cvitem{Beschreibung}{Ziel des Projektes ist es eine skallierbare und automatisierte Umgebung zu haben in der Applikationen einfach, sicher und nachprüfbar ausgerollt und überwacht werden können. Dazu werden verschiedene Möglichkeiten ausprobiert und am Ende eine Implementation gewählt. Die Schulung der Kollegen ist auch Teil des Projektes.}
+
+\vspace{10pt}
+
+\subsection{Lagerservice}
+\cvitem{Typ}{Firmenproject}
+\cvitem{Zeitraum}{03/2017 -- Today}
+\cvitem{Team}{Yuna Morgenstern, Vincent Raabe}
+\cvitem{Technologien}{\textsc{Java}, \textsc{Spring-Boot}}
+\cvitem{Beschreibung}{Die Aufgabe ist es einen Service zu implementieren, der alle Lagerbestände der Firma abbilden und anderen Anwendungen zur Verfügung stellen kann. Besonderes Augenmerk liegt dabei auf einer Abstraktion des zugrunde liegenden ERP Systems und einer hohen Verfügbarkeit des Services.}
+
+\vspace{10pt}
+
+
+\subsection{ESB Rückbau}
+\cvitem{Typ}{Refactoring}
+\cvitem{zeitraum}{09/2016 -- Today}
+\cvitem{Team}{Batyr Malik, Yuna Morgenstern, Michael Mertins, Vincent Raabe}
+\cvitem{Technologien}{\textsc{Java}, \textsc{Spring-Boot}}
+\cvitem{Beschreibung}{Die Hauptaufgabe dieses Projektes ist es eine alte, völlig falsch dimensionierte und implementierte Komponente zu entfernen. Dabei müssen die wenigen wertvollen Teile identifiziert und erhalten werden.}
+
+\vspace{10pt}
+
+\subsection{Toga}
+\cvitem{Typ}{Open Source}
+\cvitem{zeitraum}{2016}
+\cvitem{Team}{Willi Schönborn}
+\cvitem{URL}{\url{https://github.com/zalando-incubator/toga}}
+\cvitem{Technologien}{\textsc{Java}, \textsc{JUnit}}
+\cvitem{Beschreibung}{Toga ist eine Bibliothek mit dem Ziel die Arbeit mit  \textsc{JSON} erheblich zu vereinfachen. 
+Sie kann genutzt werden um verteilte Systeme zu testen in dem mit \textsc{JSON-Schema} Verträge zwischen Systemen erstellt und validiert werden. Auch lassen sich aus den Verträgen testdaten generieren.}
+
+\vspace{10pt}
+
+\subsection{Testing Microservices}
+\cvitem{Typ}{Theoretische Konzeption}
+\cvitem{zeitraum}{2016}
+\cvitem{URL}{\url{https://github.com/zalando-incubator/testing-microservices}}
+\cvitem{Technologien}{\textsc{Text}, \textsc{Java}, \textsc{Spring boot}}
+\cvitem{Beschreibung}{Theoretische Abhandlung über das Testen verteiler Systeme in einem eventsourcing Umfeld. Der interessante Aspekt ist die Möglichkeit Systeme ohne die Existenz eines Staging Systems zu testen. Die Grundidee ist, dass die einzelnen Komponenten untereinander transivite Verträge haben und diese automatisiert und vollständig abgetestet werden können.}
+
+\vspace{10pt}
+
+\subsection{Onboarding Automation}
+\cvitem{Typ}{Software Projekt}
+\cvitem{Zeitraum}{09/2015 -- 06/2016}
+\cvitem{Team}{Henrik Andersen, Laura-Anniina Inberg, Cassandra Pope}
+\cvitem{Technologien}{\textsc{Java}, \textsc{Spring-Boot}, \textsc{Event Sourcing}, \textsc{AWS}}
+\cvitem{Beschreibung}{Konzeptionierung und Implementierung einer Softwarelösung zur Automatisierung des Onboarding Prozesses. Das Ziel war es die manuelle Arbeit pro Neueinsteiger zu minimieren und dem Team damit die maximal mögliche Effizienz zu geben.}
+
+\vspace{10pt}
+
+\subsection{Mahngebühren}
+\cvitem{Typ}{Software Projekt}
+\cvitem{Zeitraum}{10/2013}
+\cvitem{Team}{Pablo Rojas}
+\cvitem{Technologien}{\textsc{Java}, \textsc{Spring}}
+\cvitem{Beschreibung}{Konzeptionierung und Implementation eines Teiles des Mahnprozesses von Zalando. Die Mahnungen werden vom Buchhaltungssystem abgefragt und je nach Art und Land über die entsprechenden Kanäle an die Kunden weitergeleitet. Dabei soll das System maximal konfigurierbar gehalten werden.}
+
+\vspace{10pt}
+
+\subsection{Gutschriftslogik}
+\cvitem{Typ}{Refactoring}
+\cvitem{Zeitraum}{04/2014 -- 06/2014}
+\cvitem{Team}{Willi Schönborn, Sarah Jehn}
+\cvitem{Technologien}{\textsc{Java}, \textsc{Spring}}
+\cvitem{Beschreibung}{Kompletter Neubau der Gutschriftslogik von Zalando (manuelle Gutschriften, Retouren, Stornierungen). Die Herausforderung war eine sehr komplexe Logik durch etwas leicht zu wartendes und stark konfigurierbares zu ersetzen.}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	TECHNOLOGIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technologien}
+Mit den folgenden Technologien arbeite ich fast täglich:
+\newline
+
+\cvitem{Sprachen}{\textsc{Java}, \textsc{SQL}, \textsc{Python}, \textsc{Bash}, \textsc{HTML}, \textsc{CSS}, \LaTeX}
+\cvitem{Datenbanken}{\textsc{PostgreSQL}, \textsc{Oracle DB}, \textsc{MySQL}}
+\cvitem{Bibliotheken}{\textsc{Guava}, \textsc{SLF4J}}
+\cvitem{Frameworks}{\textsc{Spring-Boot}, \textsc{Guice}, \textsc{JPA}, \textsc{Servlet API}}
+\cvitem{Testing}{\textsc{Junit}, \textsc{EasyMock}, \textsc{Mockito}}
+\cvitem{SCM}{\textsc{Git}, \textsc{Subversion}}
+\cvitem{Build Tools}{\textsc{Maven}, \textsc{Gradle}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Sprachen}
+
+\cvitemwithcomment{Deutsch}{Muttersprache}{}
+\cvitemwithcomment{Englisch}{Verhandlungssicher}{}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
