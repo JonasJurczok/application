@@ -1,5 +1,6 @@
 name: Generate CV PDFs
 on:
+  workflow_dispatch:
   push:
     branches:
       - trunk
