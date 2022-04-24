@@ -1,0 +1,19 @@
+name: Generate CV PDFs
+on:
+  push:
+    branches:
+      - trunk
+    paths:
+      - '**.tex'
+
+jobs:
+  generate-cv-pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "*.tex"
+          glob_root_file: true
