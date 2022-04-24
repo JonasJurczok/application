@@ -17,5 +17,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           pre_compile: "tlmgr update --self && tlmgr install moderncv && tlmgr update --all"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -diagnostics
           root_file: "*.tex"
           glob_root_file: true
