@@ -20,14 +20,9 @@ jobs:
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -diagnostics
           root_file: "curriculum-vitae*.tex"
           glob_root_file: true
-      - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@1.36.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: false
-          RELEASE_BRANCHES: trunk
-          INITIAL_VERSION: 1.0.0
-      - name: Create release and add PDFs
-        uses: softprops/action-gh-release@v1
+      - uses: ncipollo/release-action@v1
         with:
-          files: "*.pdf"
+          artifacts: "*.pdf"
+          tag: "latest"
+          removeArtifacts: true
+          token: ${{ secrets.GITHUB_TOKEN }}
