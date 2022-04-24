@@ -22,6 +22,7 @@ jobs:
           glob_root_file: true
       - uses: ncipollo/release-action@v1
         with:
+          allowUpdates: true
           artifacts: "*.pdf"
           tag: "latest"
           removeArtifacts: true
