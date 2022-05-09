@@ -6,6 +6,8 @@ on:
       - trunk
     paths:
       - '**.tex'
+      - 'pictures/*'
+      - '.github/*'
 
 jobs:
   generate-cv-pdfs:
@@ -20,10 +22,10 @@ jobs:
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -diagnostics
           root_file: "curriculum-vitae*.tex"
           glob_root_file: true
+      - name: set date
+        run: echo "NOW=$(date +'%Y.%m.%d-%H.%M.%S')" >> $GITHUB_ENV
       - uses: ncipollo/release-action@v1
         with:
-          allowUpdates: true
           artifacts: "*.pdf"
-          tag: "latest"
-          removeArtifacts: true
+          tag: ${{ env.NOW }}
           token: ${{ secrets.GITHUB_TOKEN }}
