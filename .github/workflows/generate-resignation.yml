@@ -19,7 +19,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          pre_compile: "wget https://ftp.fau.de/ctan/systems/texlive/tlnet/update-tlmgr-latest.sh && chmod +x update-tlmgr-latest.sh && update-tlmgr-latest.sh -- --upgrade && tlmgr update --self && tlmgr install moderncv && tlmgr update --all"
+          pre_compile: "wget https://ftp.fau.de/ctan/systems/texlive/tlnet/update-tlmgr-latest.sh && chmod +x update-tlmgr-latest.sh && ./update-tlmgr-latest.sh -- --upgrade && tlmgr update --self && tlmgr install moderncv && tlmgr update --all"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -diagnostics
           root_file: "resignation*.tex"
           glob_root_file: true
